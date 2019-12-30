@@ -5,11 +5,13 @@
 }
 .div1{
     background-color: #121217;
+    background-image: url(./img/developer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
 }
 .div2{
-    background-color: #18181d;
     width: 100%;
 }
 .div3{
@@ -49,14 +51,47 @@
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 .nav ul li a:hover{
     color: #ca8e46;
+    padding-bottom: 3px;
+    border-bottom: solid 1px #ca8e46;
 }
 .nav ul i{
     color: #ca8e46;
 }
 .clear{
     clear: both;
+}
+.content{
+    width: 60%;
+    margin: 0px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.inner{
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.inner h1{
+    margin: 20px 0px;
+    font-size: 2.5vw;
+    color: white;
+}
+.inner p{
+    margin: 20px 0px;
+    font-size: 2.5vw;
+    color: #ca8e46;
+    font-weight: bold;
+}
+.content img{
+    width: 40%;
+    float: right;
+    border: solid 1px #ca8e46;
+    border-radius: 10px;
 }
