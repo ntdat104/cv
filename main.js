@@ -1,5 +1,8 @@
-const cursor = document.querySelector(".cursor");
+let mouseCursor = document.querySelector(".cursor");
     
-document.addEventListener("mousemove", e => {
-    cursor.setAttribute("style", "top: "+(e.pageY)+"px; left: "+(e.pageX)+"px;")
-})
+window.addEventListener("mousemove",cursor);
+
+function cursor(e){
+    mouseCursor.style.top = e.pageY - 12 + "px";
+    mouseCursor.style.left = e.pageX - 12 + "px";
+}

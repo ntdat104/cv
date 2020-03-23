@@ -5,21 +5,35 @@
     cursor: none;
 }
 .cursor{
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     border: 2px solid greenyellow;
     border-radius: 50%;
     position: absolute;
-    z-index: 99;
+    z-index: 10;
     pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: cursorAnim .3s infinite alternate;
 }
 @keyframes cursorAnim{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(.7);
-    }
+  from{
+      transform: scale(.7);
+  }
+  to{
+      transform: scale(1.2);
+  }
+}
+.inner-cursor{
+  width: 0px;
+  height: 0px;
+  border: 2px solid greenyellow;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -62,11 +76,12 @@ body{
 }
 .header{
     width: 60%;
+    height: 50px;
     margin: 0px auto;
-    padding: 5px 0px;
-}
-.logo{
-    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo h1{
     font-weight: normal;
@@ -81,16 +96,12 @@ body{
 .logo h1 a span{
     color: greenyellow;
 }
-.nav{
-    float: right;
-}
 .nav ul{
     list-style: none;
-    display: flex;
-    margin: 10px 0px;
 }
 .nav ul li{
-    margin: 0px 20px;
+    display: inline-block;
+    margin: 0px 10px;
 }
 .nav ul li a{
     color: white;
@@ -100,15 +111,11 @@ body{
     transition: 0.4s;
 }
 .nav ul li a:hover{
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     border-bottom: solid 1px greenyellow;
 }
 .nav ul i{
     color: greenyellow;
-}
-.clear{
-    clear: both;
-    display: none;
 }
 .section{
     width: 100%;
