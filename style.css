@@ -293,6 +293,7 @@ body {
 #timeline {
   background-color: #474e5d;
   padding: 50px 0px;
+  display: none;
 }
 .timeline {
   position: relative;
@@ -394,6 +395,7 @@ body {
 #project {
   background-color: #f6d2c9;
   height: 100vh;
+  display: none;
 }
 #contact {
   background-color: #f2f2f2;
