@@ -175,12 +175,11 @@ body {
 }
 /* about */
 #about {
-  height: 100vh;
   background-color: #101010;
 }
 .about-content {
   width: 1140px;
-  height: 100%;
+  display: block;
   margin: 0px auto;
   color: #f0f0f0;
   padding: 100px 0px;
